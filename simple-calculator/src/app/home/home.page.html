@@ -1,0 +1,35 @@
+<ion-header>  
+  <ion-toolbar>  
+    <ion-title>  
+      IonicInputs  
+    </ion-title>  
+  </ion-toolbar>  
+</ion-header>  
+  
+<ion-content class="padding" color="light"  fullscreen>  
+  
+  <ion-grid>  
+    <ion-row> 
+      <ion-col id="a" size="3">
+
+      <ion-label>num1</ion-label>  
+      <ion-input type="number" [(ngModel)]="num1" id="num1"></ion-input>  
+   
+      <ion-label>num2</ion-label>  
+      <ion-input type="number"  [(ngModel)]="num2" id="num2"></ion-input>  
+   
+
+  <div padding>  
+    <ion-button color="primary" expand="block" (click)="add()">add</ion-button>  
+    <ion-button color="primary" expand="block" (click)="subtract()">subtract</ion-button>  
+    <ion-button color="primary" expand="block" (click)="devide()">devide</ion-button>  
+    <ion-button color="primary" expand="block" (click)="multi()">multi</ion-button>  
+  </div>  
+
+  <ion-label position="stacked">Result:</ion-label>
+  <ion-input type="text" readonly="true" [value]="result"></ion-input>
+</ion-col>
+
+</ion-row> 
+</ion-grid>  
+</ion-content>  
