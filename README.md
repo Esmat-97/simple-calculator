@@ -1,1 +1,1 @@
-simple calculator i ionic
+simple calculator in ionic
